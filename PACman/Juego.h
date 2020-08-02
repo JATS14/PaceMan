@@ -27,7 +27,7 @@ struct Pos{
  */
 
 struct Fantasma crarFantasma(int tipo,int velocidad, int x, int y);
-struct Fruta crarFruta(int tipo,int puntaje);
+void crarFruta(int tipo,int puntaje);
 void iniciarJuego(struct Jugador jugador1);
 void iniciarJuegoaux(char move);
 void imprimirTablero(int tab[31][28]);
@@ -35,6 +35,7 @@ char obtenerMovimiento();
 void moverPacman(char move);
 struct Pos buscarEntidad(int tipo);
 void pacmanMuere(int i, int j);
+void agregarFrutaFantasma();
 
 
 #endif //PACMAN_JUEGO_H

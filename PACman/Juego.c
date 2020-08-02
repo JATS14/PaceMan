@@ -72,6 +72,9 @@ void iniciarJuegoaux(char move){
     if(move == 'i') {
         imprimirTablero(tablero);
     }
+    if(move == 'f') {
+        agregarFrutaFantasma();
+    }
     if(move == 'e') {
         printf("---------------------------------------- \n");
         printf("El Puntaje actual es: %d \n" , jugador.puntaje);
@@ -86,15 +89,21 @@ void iniciarJuegoaux(char move){
 };
 
 struct Fantasma crarFantasma(int tipo,int velocidad, int x, int y){
-
-};
-struct Fruta crarFruta(int tipo,int puntaje){
-    if (tipo != 9 || tipo != 10 || tipo != 11 || tipo != 12 || tipo != 13){
-        printf("Error en el tipo de fruta ");
+    if (tipo != 5 || tipo != 6 || tipo != 7 || tipo != 8 ){
+        printf("Error en el tipo de Fantasma ");
     }
-    struct Fruta frut = {tipo,puntaje};
-    frutaEnMapa = frut;
-    tablero[17][14] = tipo;
+    struct Fantasma fant = {tipo, velocidad, x, y};
+    //FALTA VERIFICAR QUE NO ESTE
+    // FALTA PONERLOS y que se mueva
+};
+void crarFruta(int tipo,int puntaje){
+    if (tipo == 9 || tipo == 10 || tipo == 11 || tipo == 12 || tipo == 13){
+        struct Fruta frut = {tipo,puntaje};
+        frutaEnMapa = frut;
+        tablero[17][14] = tipo;
+        return;
+    }
+    printf("Error en el tipo de fruta ");
 };
 
 void imprimirTablero(int tab[31][28]){
@@ -114,6 +123,7 @@ char obtenerMovimiento(){
     if (c == 'p') return c;
     if (c == 'i') return c;
     if (c == 'e') return c;
+    if (c == 'f') return c;
     else {
         obtenerMovimiento();
     }
@@ -123,6 +133,9 @@ void moverPacman(char move) {
         return;
     }
     if(move == 'e') {
+        return;
+    }
+    if(move == 'f') {
         return;
     }
     struct Pos ubicacion = buscarEntidad(2);
@@ -176,4 +189,41 @@ void pacmanMuere(int i, int j){
         tablero[23][14] = 2;
     }
 
+}
+void agregarFrutaFantasma(){
+    printf("------------------------------------------------------\n");
+    printf("Menu para agregar Fruta / fantasma \n");
+    printf("Ingrese 1 para agregar Fruta o 2 para agregar Fantasma \n");
+    char f = getchar();
+    f = getchar();
+    if(f == '1') {
+        printf("Creado Fruta\n");
+        printf("Ingrese el tipo \n");
+        char t= getchar();
+        t = getchar();
+        printf("Ingrese el puntaje \n");
+        char p = getchar();
+        p = getchar();
+
+        printf("Se preciona tecla en crear : %c \n", t);
+        //NO SRIVE EL SEGUNDO CHAR
+        int tip = 0;
+        if (t == '9') tip = 9;
+        if (t == '1') tip = 10;
+        if (t == '11') tip = 11;
+        if (t == '12') tip = 12;
+        crarFruta(tip,1000);
+        printf("Fruta Creada\n");
+        return;
+    }
+    if(f == '2') {
+        printf("Creado fantasma\n");
+        printf("Ingrese el tipo ");
+        char t = getchar();
+        printf("\n Ingrese velocidad ");
+        char p = getchar();
+        crarFantasma(t,p,11,14);
+        printf("Fantasma Creada\n");
+        return;
+    }
 }
