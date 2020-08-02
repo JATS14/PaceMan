@@ -9,6 +9,7 @@ int vidas;
 int nivel;
 int listaFantasmas[4];
 
+
 struct Fantasma;
 struct Fruta;
 struct Jugador{
@@ -26,7 +27,7 @@ struct Pos{
  */
 
 struct Fantasma crarFantasma(int tipo,int velocidad, int x, int y);
-struct Fruta crarFruta(int tipo,int puntaje, int x, int y);
+struct Fruta crarFruta(int tipo,int puntaje);
 void iniciarJuego(struct Jugador jugador1);
 void iniciarJuegoaux(char move);
 void imprimirTablero(int tab[31][28]);

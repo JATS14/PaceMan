@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/adrian/CLionProjects/PACman/Juego.c" "/home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles/PACman.dir/Juego.c.o"
-  "/home/adrian/CLionProjects/PACman/cmake-build-debug/extras.c" "/home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles/PACman.dir/extras.c.o"
-  "/home/adrian/CLionProjects/PACman/main.c" "/home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles/PACman.dir/main.c.o"
+  "/home/adrian/CLionProjects/PaceMan/PACman/Juego.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/Juego.c.o"
+  "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/extras.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/extras.c.o"
+  "/home/adrian/CLionProjects/PaceMan/PACman/main.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

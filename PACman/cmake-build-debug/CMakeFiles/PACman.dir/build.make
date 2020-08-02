@@ -43,10 +43,10 @@ RM = /home/adrian/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.8743.17/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adrian/CLionProjects/PACman
+CMAKE_SOURCE_DIR = /home/adrian/CLionProjects/PaceMan/PACman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adrian/CLionProjects/PACman/cmake-build-debug
+CMAKE_BINARY_DIR = /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PACman.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/PACman.dir/flags.make
 
 CMakeFiles/PACman.dir/main.c.o: CMakeFiles/PACman.dir/flags.make
 CMakeFiles/PACman.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PACman.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/main.c.o   -c /home/adrian/CLionProjects/PACman/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PACman.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/main.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/main.c
 
 CMakeFiles/PACman.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PACman/main.c > CMakeFiles/PACman.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/main.c > CMakeFiles/PACman.dir/main.c.i
 
 CMakeFiles/PACman.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PACman/main.c -o CMakeFiles/PACman.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/main.c -o CMakeFiles/PACman.dir/main.c.s
 
 CMakeFiles/PACman.dir/Juego.c.o: CMakeFiles/PACman.dir/flags.make
 CMakeFiles/PACman.dir/Juego.c.o: ../Juego.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PACman.dir/Juego.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/Juego.c.o   -c /home/adrian/CLionProjects/PACman/Juego.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PACman.dir/Juego.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/Juego.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/Juego.c
 
 CMakeFiles/PACman.dir/Juego.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/Juego.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PACman/Juego.c > CMakeFiles/PACman.dir/Juego.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/Juego.c > CMakeFiles/PACman.dir/Juego.c.i
 
 CMakeFiles/PACman.dir/Juego.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/Juego.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PACman/Juego.c -o CMakeFiles/PACman.dir/Juego.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/Juego.c -o CMakeFiles/PACman.dir/Juego.c.s
 
 CMakeFiles/PACman.dir/extras.c.o: CMakeFiles/PACman.dir/flags.make
 CMakeFiles/PACman.dir/extras.c.o: extras.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PACman.dir/extras.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/extras.c.o   -c /home/adrian/CLionProjects/PACman/cmake-build-debug/extras.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PACman.dir/extras.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/extras.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/extras.c
 
 CMakeFiles/PACman.dir/extras.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/extras.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PACman/cmake-build-debug/extras.c > CMakeFiles/PACman.dir/extras.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/extras.c > CMakeFiles/PACman.dir/extras.c.i
 
 CMakeFiles/PACman.dir/extras.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/extras.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PACman/cmake-build-debug/extras.c -o CMakeFiles/PACman.dir/extras.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/extras.c -o CMakeFiles/PACman.dir/extras.c.s
 
 # Object files for target PACman
 PACman_OBJECTS = \
@@ -110,7 +110,7 @@ PACman: CMakeFiles/PACman.dir/Juego.c.o
 PACman: CMakeFiles/PACman.dir/extras.c.o
 PACman: CMakeFiles/PACman.dir/build.make
 PACman: CMakeFiles/PACman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable PACman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable PACman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PACman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/PACman.dir/clean:
 .PHONY : CMakeFiles/PACman.dir/clean
 
 CMakeFiles/PACman.dir/depend:
-	cd /home/adrian/CLionProjects/PACman/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/CLionProjects/PACman /home/adrian/CLionProjects/PACman /home/adrian/CLionProjects/PACman/cmake-build-debug /home/adrian/CLionProjects/PACman/cmake-build-debug /home/adrian/CLionProjects/PACman/cmake-build-debug/CMakeFiles/PACman.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/CLionProjects/PaceMan/PACman /home/adrian/CLionProjects/PaceMan/PACman /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PACman.dir/depend
 

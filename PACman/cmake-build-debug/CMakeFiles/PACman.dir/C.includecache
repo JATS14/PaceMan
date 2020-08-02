@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/adrian/CLionProjects/PACman/Juego.c
+/home/adrian/CLionProjects/PaceMan/PACman/Juego.c
 Juego.h
-/home/adrian/CLionProjects/PACman/Juego.h
+/home/adrian/CLionProjects/PaceMan/PACman/Juego.h
 stdio.h
 -
 
-/home/adrian/CLionProjects/PACman/Juego.h
+/home/adrian/CLionProjects/PaceMan/PACman/Juego.h
 

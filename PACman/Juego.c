@@ -36,6 +36,7 @@ int tablero[31][28]= {
         {1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1},
         {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}};
 struct Jugador jugador;
+struct Fruta frutaEnMapa;
 int valorPuntos = 10;
 int vidas = 3;
 int nivel = 1;
@@ -50,8 +51,6 @@ struct Fantasma{
 struct Fruta{
     int tipo;
     int puntaje;
-    int x;
-    int y;
 };
 struct Jugador;
 
@@ -81,15 +80,21 @@ void iniciarJuegoaux(char move){
         printf("---------------------------------------- \n");
     }
     moverPacman(move);
-    move = obtenerMovimiento();
-    iniciarJuegoaux(move);
+    moverPacman(move);
+    char move2 = obtenerMovimiento();
+    iniciarJuegoaux(move2);
 };
 
 struct Fantasma crarFantasma(int tipo,int velocidad, int x, int y){
 
 };
-struct Fruta crarFruta(int tipo,int puntaje, int x, int y){
-
+struct Fruta crarFruta(int tipo,int puntaje){
+    if (tipo != 9 || tipo != 10 || tipo != 11 || tipo != 12 || tipo != 13){
+        printf("Error en el tipo de fruta ");
+    }
+    struct Fruta frut = {tipo,puntaje};
+    frutaEnMapa = frut;
+    tablero[17][14] = tipo;
 };
 
 void imprimirTablero(int tab[31][28]){
@@ -114,6 +119,12 @@ char obtenerMovimiento(){
     }
 };
 void moverPacman(char move) {
+    if(move == 'i') {
+        return;
+    }
+    if(move == 'e') {
+        return;
+    }
     struct Pos ubicacion = buscarEntidad(2);
     int ix = 0;
     int jx = 0;
@@ -125,12 +136,6 @@ void moverPacman(char move) {
     if (move == 'd') jx = 1;
     ubicacion.i += ix;
     ubicacion.j += jx;
-    if(move == 'i') {
-        return;
-    }
-    if(move == 'e') {
-        return;
-    }
     while (tablero[ubicacion.i][ubicacion.j] != 1) {
         if (tablero[ubicacion.i][ubicacion.j] == 5) {
             pacmanMuere(ubicacion.i, ubicacion.j);
@@ -144,7 +149,6 @@ void moverPacman(char move) {
         ji = ubicacion.j;
         ubicacion.i += ix;
         ubicacion.j += jx;
-
     }
 };
 //printf("pocisicon de pacman en i = %d \n",ubicacion.i);
