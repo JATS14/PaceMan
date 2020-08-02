@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/adrian/CLionProjects/PACman/Juego.c
+Juego.h
+/home/adrian/CLionProjects/PACman/Juego.h
+stdio.h
+-
+
+/home/adrian/CLionProjects/PACman/Juego.h
+
