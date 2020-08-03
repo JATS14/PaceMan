@@ -3,13 +3,11 @@
 #define PACMAN_JUEGO_H
 
 
+#include <stdbool.h>
 
-int valorPuntos;
-int vidas;
-int nivel;
+
 int listaFantasmas[4];
-
-
+bool modoPastilla;
 struct Fantasma;
 struct Fruta;
 struct Jugador{
@@ -26,7 +24,7 @@ struct Pos{
  * Funciones necesarias para correr el juego
  */
 
-struct Fantasma crarFantasma(int tipo,int velocidad, int x, int y);
+void crarFantasma(int tipo,int velocidad, int x, int y);
 void crarFruta(int tipo,int puntaje);
 void iniciarJuego(struct Jugador jugador1);
 void iniciarJuegoaux(char move);
@@ -36,6 +34,8 @@ void moverPacman(char move);
 struct Pos buscarEntidad(int tipo);
 void pacmanMuere(int i, int j);
 void agregarFrutaFantasma();
+int entidadEn(int i, int j);
+bool buscarTipoFantasma(int tipo);
 
 
 #endif //PACMAN_JUEGO_H

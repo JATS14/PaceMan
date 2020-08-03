@@ -1,6 +1,7 @@
 
 #include "Juego.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 
 int tablero[31][28]= {
@@ -37,10 +38,9 @@ int tablero[31][28]= {
         {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}};
 struct Jugador jugador;
 struct Fruta frutaEnMapa;
-int valorPuntos = 10;
-int vidas = 3;
-int nivel = 1;
-int listaFantasmas[4] = {1,2,3,4};
+int listaFantasmas[4] = {5,6,7,8};
+bool modoPastilla = false;
+
 
 struct Fantasma{
     int tipo;
@@ -88,13 +88,22 @@ void iniciarJuegoaux(char move){
     iniciarJuegoaux(move2);
 };
 
-struct Fantasma crarFantasma(int tipo,int velocidad, int x, int y){
-    if (tipo != 5 || tipo != 6 || tipo != 7 || tipo != 8 ){
+void crarFantasma(int tipo,int velocidad, int x, int y){
+    if (tipo == 5 || tipo == 6 || tipo == 7 || tipo == 8) {
+        int e = entidadEn(x, y);
+        printf("Se Encontro: %d \n", e);
+        bool noEsta = buscarTipoFantasma(tipo);
+        if (e != 1 && noEsta == true) {
+            struct Fantasma fant = {tipo, velocidad, x, y};
+            tablero[x][y] = fant.tipo;
+            printf("Fantasma Creada\n");
+        }
+        else{
+            printf("Error en la posicicon del Fantasma ");
+        }
+    } else {
         printf("Error en el tipo de Fantasma ");
     }
-    struct Fantasma fant = {tipo, velocidad, x, y};
-    //FALTA VERIFICAR QUE NO ESTE
-    // FALTA PONERLOS y que se mueva
 };
 void crarFruta(int tipo,int puntaje){
     if (tipo == 9 || tipo == 10 || tipo == 11 || tipo == 12 || tipo == 13){
@@ -150,12 +159,22 @@ void moverPacman(char move) {
     ubicacion.i += ix;
     ubicacion.j += jx;
     while (tablero[ubicacion.i][ubicacion.j] != 1) {
-        if (tablero[ubicacion.i][ubicacion.j] == 5) {
-            pacmanMuere(ubicacion.i, ubicacion.j);
-            break;
+        int entTable = tablero[ubicacion.i][ubicacion.j];
+        if (entTable== 5 || entTable== 6 || entTable== 7 || entTable== 8) {
+            if (modoPastilla == false) {
+                pacmanMuere(ubicacion.i, ubicacion.j);
+                break;
+            }else{
+                //PONER QUE SE COMIO A UN FANTASMA
+                break;
             }
-        if (tablero[ubicacion.i][ubicacion.j] == 3) jugador.puntaje += 10;
-        if (tablero[ubicacion.i][ubicacion.j] == 9) jugador.puntaje += 1000;
+            }
+        if (entTable == 3) jugador.puntaje += 10;
+        if (entTable == 9 || entTable == 10 || entTable == 11 || entTable == 12 || entTable == 13) {
+            jugador.puntaje += frutaEnMapa.puntaje;
+            frutaEnMapa.puntaje = 0;
+            frutaEnMapa.tipo = 0;
+        }
         tablero[ii][ji] = 0;
         tablero[ubicacion.i][ubicacion.j] = 2;
         ii = ubicacion.i;
@@ -177,6 +196,18 @@ struct Pos buscarEntidad(int tipo){
         }
     }
 };
+int entidadEn(int i, int j){
+    return tablero[i][j];
+};
+bool buscarTipoFantasma(int tipo){
+    for (int i = 0; i < 4; i++){
+        if (listaFantasmas[i] == tipo){
+            listaFantasmas[i] = 0;
+            return true;
+        }
+    }
+    return false;
+}
 void pacmanMuere(int i, int j){
     if (jugador.vidas == 0) {
         printf("(%d , %d) \n",i,j);
@@ -199,31 +230,32 @@ void agregarFrutaFantasma(){
     if(f == '1') {
         printf("Creado Fruta\n");
         printf("Ingrese el tipo \n");
-        char t= getchar();
-        t = getchar();
-        printf("Ingrese el puntaje \n");
-        char p = getchar();
-        p = getchar();
+        int t;
+        scanf("%d", &t);
 
-        printf("Se preciona tecla en crear : %c \n", t);
-        //NO SRIVE EL SEGUNDO CHAR
-        int tip = 0;
-        if (t == '9') tip = 9;
-        if (t == '1') tip = 10;
-        if (t == '11') tip = 11;
-        if (t == '12') tip = 12;
-        crarFruta(tip,1000);
+        printf("Ingrese el puntaje \n");
+        int p;
+        scanf("%d", &p);
+
+        crarFruta(t,p);
         printf("Fruta Creada\n");
         return;
     }
     if(f == '2') {
         printf("Creado fantasma\n");
-        printf("Ingrese el tipo ");
-        char t = getchar();
+        printf("Ingrese el tipo (5 = Blinky, 6 = Pinky, 7 = ink, 8 = Clynde)");
+        int tipo;
+        scanf("%d", &tipo);
         printf("\n Ingrese velocidad ");
-        char p = getchar();
-        crarFantasma(t,p,11,14);
-        printf("Fantasma Creada\n");
+        int vel;
+        scanf("%d", &vel);
+        printf("\n Ingrese La fila");
+        int fil;
+        scanf("%d", &fil);
+        printf("\n Ingrese La Columna");
+        int col;
+        scanf("%d", &col);
+        crarFantasma(tipo,vel,fil,col);
         return;
     }
 }

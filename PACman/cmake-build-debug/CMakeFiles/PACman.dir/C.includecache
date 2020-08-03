@@ -11,8 +11,12 @@ Juego.h
 /home/adrian/CLionProjects/PaceMan/PACman/Juego.h
 stdio.h
 -
+stdbool.h
+-
 
 /home/adrian/CLionProjects/PaceMan/PACman/Juego.h
+stdbool.h
+-
 
 /home/adrian/CLionProjects/PaceMan/PACman/main.c
 stdio.h
