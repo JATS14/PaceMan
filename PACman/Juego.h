@@ -36,6 +36,10 @@ void pacmanMuere(int i, int j);
 void agregarFrutaFantasma();
 int entidadEn(int i, int j);
 bool buscarTipoFantasma(int tipo);
+void copiarTableros();
+void resetearTablero();
+bool pasaDeNivel();
+int contarPuntos();
 
 
 #endif //PACMAN_JUEGO_H

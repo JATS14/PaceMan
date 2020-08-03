@@ -40,6 +40,7 @@ struct Jugador jugador;
 struct Fruta frutaEnMapa;
 int listaFantasmas[4] = {5,6,7,8};
 bool modoPastilla = false;
+int tableroNuevoNivel[31][28];
 
 
 struct Fantasma{
@@ -57,6 +58,7 @@ struct Jugador;
 
 void iniciarJuego(struct Jugador jugador1){
     imprimirTablero(tablero);
+    copiarTableros();
     jugador =  jugador1;
     char move = obtenerMovimiento();
     iniciarJuegoaux(move);
@@ -84,6 +86,13 @@ void iniciarJuegoaux(char move){
     }
     moverPacman(move);
     moverPacman(move);
+    //PASA DE NIVEL?
+    if(pasaDeNivel() == true){
+        //HACER COSAS QUE HACEN PASAR DE NIVEL
+        jugador.nivel++;
+        printf("Pasaste de Nivel\n");
+        printf("El nivel actual es: %d \n" , jugador.nivel);
+    }
     char move2 = obtenerMovimiento();
     iniciarJuegoaux(move2);
 };
@@ -210,7 +219,8 @@ bool buscarTipoFantasma(int tipo){
 }
 void pacmanMuere(int i, int j){
     if (jugador.vidas == 0) {
-        printf("(%d , %d) \n",i,j);
+        printf("Perdiste :cc \n");
+        //Cosas para hcaer cuando pierde
         return;
     }
     else{
@@ -258,4 +268,34 @@ void agregarFrutaFantasma(){
         crarFantasma(tipo,vel,fil,col);
         return;
     }
+}
+
+void copiarTableros(){
+    for (int i = 0; i < 31;i++){
+        for (int j = 0; j < 28;j++){
+            tableroNuevoNivel[i][j] = tablero[i][j];
+        }
+    }
+
+}
+void resetearTablero(){
+    for (int i = 0; i < 31;i++){
+        for (int j = 0; j < 28;j++){
+            tablero[i][j] = tableroNuevoNivel[i][j];
+        }
+    }
+
+}
+bool pasaDeNivel(){
+    if (contarPuntos() == 0) return true;
+    return false;
+}
+int contarPuntos(){
+    int cant = 0;
+    for (int i = 0; i < 31;i++){
+        for (int j = 0; j < 28;j++){
+            if(tablero[i][j] == 3 || tablero[i][j] == 4 ) cant++;
+        }
+    }
+    return cant;
 }
