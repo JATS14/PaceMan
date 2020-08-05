@@ -116,11 +116,81 @@ CMakeFiles/PACman.dir/extras.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/extras.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/extras.c -o CMakeFiles/PACman.dir/extras.c.s
 
+CMakeFiles/PACman.dir/ServidorSocket.c.o: CMakeFiles/PACman.dir/flags.make
+CMakeFiles/PACman.dir/ServidorSocket.c.o: ../ServidorSocket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PACman.dir/ServidorSocket.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/ServidorSocket.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/ServidorSocket.c
+
+CMakeFiles/PACman.dir/ServidorSocket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/ServidorSocket.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/ServidorSocket.c > CMakeFiles/PACman.dir/ServidorSocket.c.i
+
+CMakeFiles/PACman.dir/ServidorSocket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/ServidorSocket.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/ServidorSocket.c -o CMakeFiles/PACman.dir/ServidorSocket.c.s
+
+CMakeFiles/PACman.dir/ClienteSocket.c.o: CMakeFiles/PACman.dir/flags.make
+CMakeFiles/PACman.dir/ClienteSocket.c.o: ../ClienteSocket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PACman.dir/ClienteSocket.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/ClienteSocket.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/ClienteSocket.c
+
+CMakeFiles/PACman.dir/ClienteSocket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/ClienteSocket.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/ClienteSocket.c > CMakeFiles/PACman.dir/ClienteSocket.c.i
+
+CMakeFiles/PACman.dir/ClienteSocket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/ClienteSocket.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/ClienteSocket.c -o CMakeFiles/PACman.dir/ClienteSocket.c.s
+
+CMakeFiles/PACman.dir/ChSocket/Socket.c.o: CMakeFiles/PACman.dir/flags.make
+CMakeFiles/PACman.dir/ChSocket/Socket.c.o: ../ChSocket/Socket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PACman.dir/ChSocket/Socket.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/ChSocket/Socket.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.c
+
+CMakeFiles/PACman.dir/ChSocket/Socket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/ChSocket/Socket.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.c > CMakeFiles/PACman.dir/ChSocket/Socket.c.i
+
+CMakeFiles/PACman.dir/ChSocket/Socket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/ChSocket/Socket.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.c -o CMakeFiles/PACman.dir/ChSocket/Socket.c.s
+
+CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o: CMakeFiles/PACman.dir/flags.make
+CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o: ../ChSocket/Socket_Cliente.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.c
+
+CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.c > CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.i
+
+CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.c -o CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.s
+
+CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o: CMakeFiles/PACman.dir/flags.make
+CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o: ../ChSocket/Socket_Servidor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o   -c /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Servidor.c
+
+CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Servidor.c > CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.i
+
+CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Servidor.c -o CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.s
+
 # Object files for target PACman
 PACman_OBJECTS = \
 "CMakeFiles/PACman.dir/main.c.o" \
 "CMakeFiles/PACman.dir/Juego.c.o" \
-"CMakeFiles/PACman.dir/extras.c.o"
+"CMakeFiles/PACman.dir/extras.c.o" \
+"CMakeFiles/PACman.dir/ServidorSocket.c.o" \
+"CMakeFiles/PACman.dir/ClienteSocket.c.o" \
+"CMakeFiles/PACman.dir/ChSocket/Socket.c.o" \
+"CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o" \
+"CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o"
 
 # External object files for target PACman
 PACman_EXTERNAL_OBJECTS =
@@ -128,9 +198,14 @@ PACman_EXTERNAL_OBJECTS =
 PACman: CMakeFiles/PACman.dir/main.c.o
 PACman: CMakeFiles/PACman.dir/Juego.c.o
 PACman: CMakeFiles/PACman.dir/extras.c.o
+PACman: CMakeFiles/PACman.dir/ServidorSocket.c.o
+PACman: CMakeFiles/PACman.dir/ClienteSocket.c.o
+PACman: CMakeFiles/PACman.dir/ChSocket/Socket.c.o
+PACman: CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o
+PACman: CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o
 PACman: CMakeFiles/PACman.dir/build.make
 PACman: CMakeFiles/PACman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable PACman"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable PACman"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PACman.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

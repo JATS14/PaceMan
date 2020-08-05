@@ -76,10 +76,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.c">
+			<Option target="PACman"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.h">
+			<Option target="PACman"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.c">
+			<Option target="PACman"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.h">
+			<Option target="PACman"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Servidor.c">
+			<Option target="PACman"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Servidor.h">
+			<Option target="PACman"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ClienteSocket.c">
+			<Option target="PACman"/>
+		</Unit>
 		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/Juego.c">
 			<Option target="PACman"/>
 		</Unit>
 		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/Juego.h">
+			<Option target="PACman"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/ServidorSocket.c">
 			<Option target="PACman"/>
 		</Unit>
 		<Unit filename="/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/extras.c">

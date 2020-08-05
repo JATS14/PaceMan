@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/PACman.dir/main.c.o CMakeFiles/PACman.dir/Juego.c.o CMakeFiles/PACman.dir/extras.c.o  -o PACman 
+/usr/bin/cc -g   CMakeFiles/PACman.dir/main.c.o CMakeFiles/PACman.dir/Juego.c.o CMakeFiles/PACman.dir/extras.c.o CMakeFiles/PACman.dir/ServidorSocket.c.o CMakeFiles/PACman.dir/ClienteSocket.c.o CMakeFiles/PACman.dir/ChSocket/Socket.c.o CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o  -o PACman 

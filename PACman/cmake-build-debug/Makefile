@@ -143,6 +143,114 @@ PACman/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/build
 .PHONY : PACman/fast
 
+ChSocket/Socket.o: ChSocket/Socket.c.o
+
+.PHONY : ChSocket/Socket.o
+
+# target to build an object file
+ChSocket/Socket.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket.c.o
+.PHONY : ChSocket/Socket.c.o
+
+ChSocket/Socket.i: ChSocket/Socket.c.i
+
+.PHONY : ChSocket/Socket.i
+
+# target to preprocess a source file
+ChSocket/Socket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket.c.i
+.PHONY : ChSocket/Socket.c.i
+
+ChSocket/Socket.s: ChSocket/Socket.c.s
+
+.PHONY : ChSocket/Socket.s
+
+# target to generate assembly for a file
+ChSocket/Socket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket.c.s
+.PHONY : ChSocket/Socket.c.s
+
+ChSocket/Socket_Cliente.o: ChSocket/Socket_Cliente.c.o
+
+.PHONY : ChSocket/Socket_Cliente.o
+
+# target to build an object file
+ChSocket/Socket_Cliente.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o
+.PHONY : ChSocket/Socket_Cliente.c.o
+
+ChSocket/Socket_Cliente.i: ChSocket/Socket_Cliente.c.i
+
+.PHONY : ChSocket/Socket_Cliente.i
+
+# target to preprocess a source file
+ChSocket/Socket_Cliente.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.i
+.PHONY : ChSocket/Socket_Cliente.c.i
+
+ChSocket/Socket_Cliente.s: ChSocket/Socket_Cliente.c.s
+
+.PHONY : ChSocket/Socket_Cliente.s
+
+# target to generate assembly for a file
+ChSocket/Socket_Cliente.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.s
+.PHONY : ChSocket/Socket_Cliente.c.s
+
+ChSocket/Socket_Servidor.o: ChSocket/Socket_Servidor.c.o
+
+.PHONY : ChSocket/Socket_Servidor.o
+
+# target to build an object file
+ChSocket/Socket_Servidor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o
+.PHONY : ChSocket/Socket_Servidor.c.o
+
+ChSocket/Socket_Servidor.i: ChSocket/Socket_Servidor.c.i
+
+.PHONY : ChSocket/Socket_Servidor.i
+
+# target to preprocess a source file
+ChSocket/Socket_Servidor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.i
+.PHONY : ChSocket/Socket_Servidor.c.i
+
+ChSocket/Socket_Servidor.s: ChSocket/Socket_Servidor.c.s
+
+.PHONY : ChSocket/Socket_Servidor.s
+
+# target to generate assembly for a file
+ChSocket/Socket_Servidor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.s
+.PHONY : ChSocket/Socket_Servidor.c.s
+
+ClienteSocket.o: ClienteSocket.c.o
+
+.PHONY : ClienteSocket.o
+
+# target to build an object file
+ClienteSocket.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ClienteSocket.c.o
+.PHONY : ClienteSocket.c.o
+
+ClienteSocket.i: ClienteSocket.c.i
+
+.PHONY : ClienteSocket.i
+
+# target to preprocess a source file
+ClienteSocket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ClienteSocket.c.i
+.PHONY : ClienteSocket.c.i
+
+ClienteSocket.s: ClienteSocket.c.s
+
+.PHONY : ClienteSocket.s
+
+# target to generate assembly for a file
+ClienteSocket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ClienteSocket.c.s
+.PHONY : ClienteSocket.c.s
+
 Juego.o: Juego.c.o
 
 .PHONY : Juego.o
@@ -169,6 +277,33 @@ Juego.s: Juego.c.s
 Juego.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/Juego.c.s
 .PHONY : Juego.c.s
+
+ServidorSocket.o: ServidorSocket.c.o
+
+.PHONY : ServidorSocket.o
+
+# target to build an object file
+ServidorSocket.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ServidorSocket.c.o
+.PHONY : ServidorSocket.c.o
+
+ServidorSocket.i: ServidorSocket.c.i
+
+.PHONY : ServidorSocket.i
+
+# target to preprocess a source file
+ServidorSocket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ServidorSocket.c.i
+.PHONY : ServidorSocket.c.i
+
+ServidorSocket.s: ServidorSocket.c.s
+
+.PHONY : ServidorSocket.s
+
+# target to generate assembly for a file
+ServidorSocket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PACman.dir/build.make CMakeFiles/PACman.dir/ServidorSocket.c.s
+.PHONY : ServidorSocket.c.s
 
 extras.o: extras.c.o
 
@@ -233,9 +368,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PACman"
+	@echo "... ChSocket/Socket.o"
+	@echo "... ChSocket/Socket.i"
+	@echo "... ChSocket/Socket.s"
+	@echo "... ChSocket/Socket_Cliente.o"
+	@echo "... ChSocket/Socket_Cliente.i"
+	@echo "... ChSocket/Socket_Cliente.s"
+	@echo "... ChSocket/Socket_Servidor.o"
+	@echo "... ChSocket/Socket_Servidor.i"
+	@echo "... ChSocket/Socket_Servidor.s"
+	@echo "... ClienteSocket.o"
+	@echo "... ClienteSocket.i"
+	@echo "... ClienteSocket.s"
 	@echo "... Juego.o"
 	@echo "... Juego.i"
 	@echo "... Juego.s"
+	@echo "... ServidorSocket.o"
+	@echo "... ServidorSocket.i"
+	@echo "... ServidorSocket.s"
 	@echo "... extras.o"
 	@echo "... extras.i"
 	@echo "... extras.s"

@@ -6,21 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/adrian/CLionProjects/PaceMan/PACman/Juego.c
-Juego.h
-/home/adrian/CLionProjects/PaceMan/PACman/Juego.h
+/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.h
+sys/socket.h
+-
+
+/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.h
+sys/socket.h
+-
+
+/home/adrian/CLionProjects/PaceMan/PACman/ClienteSocket.c
+ChSocket/Socket_Cliente.h
+/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.h
+ChSocket/Socket.h
+/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.h
 stdio.h
 -
-stdbool.h
--
-unistd.h
--
-pthread.h
+string.h
 -
 stdlib.h
+-
+netinet/in.h
+-
+unistd.h
 -
 
 /home/adrian/CLionProjects/PaceMan/PACman/Juego.h
 stdbool.h
+-
+
+/home/adrian/CLionProjects/PaceMan/PACman/main.c
+Juego.h
+/home/adrian/CLionProjects/PaceMan/PACman/Juego.h
+pthread.h
+-
+stdio.h
+-
+stdlib.h
 -
 
