@@ -13,14 +13,14 @@ stdio.h
 -
 stdbool.h
 -
+unistd.h
+-
+pthread.h
+-
+stdlib.h
+-
 
 /home/adrian/CLionProjects/PaceMan/PACman/Juego.h
 stdbool.h
 -
-
-/home/adrian/CLionProjects/PaceMan/PACman/main.c
-stdio.h
--
-Juego.h
-/home/adrian/CLionProjects/PaceMan/PACman/Juego.h
 

@@ -2,6 +2,9 @@
 #include "Juego.h"
 #include <stdio.h>
 #include <stdbool.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <stdlib.h>
 
 
 int tablero[31][28]= {
@@ -41,13 +44,31 @@ struct Fruta frutaEnMapa;
 int listaFantasmas[4] = {5,6,7,8};
 bool modoPastilla = false;
 int tableroNuevoNivel[31][28];
+//Fantasmas
+struct Fantasma fantBlinky;
+struct Fantasma fantPinky;
+struct Fantasma fantInky;
+struct Fantasma fantClynde;
 
+//Variables necesarias para los threads
+pthread_t pacman;
+pthread_t ModoPastilla;
+pthread_t blinky;
+pthread_t pinky;
+pthread_t inky;
+pthread_t clynde;
+
+
+//pthread_create(&thread_id, NULL, myThreadFun, NULL);
+//pthread_join(thread_id, NULL);
+//exit(0);
 
 struct Fantasma{
     int tipo;
     int velocidad;
     int x;
     int y;
+    int sobreEl;
 };
 struct Fruta{
     int tipo;
@@ -90,6 +111,10 @@ void iniciarJuegoaux(char move){
     if(pasaDeNivel() == true){
         //HACER COSAS QUE HACEN PASAR DE NIVEL
         jugador.nivel++;
+        resetearTablero();
+        listaFantasmas[0] = 5; listaFantasmas[1] = 6; listaFantasmas[2] = 7; listaFantasmas[3] = 8;
+        //Parar theads de los fantasmas
+
         printf("Pasaste de Nivel\n");
         printf("El nivel actual es: %d \n" , jugador.nivel);
     }
@@ -103,8 +128,20 @@ void crarFantasma(int tipo,int velocidad, int x, int y){
         printf("Se Encontro: %d \n", e);
         bool noEsta = buscarTipoFantasma(tipo);
         if (e != 1 && noEsta == true) {
-            struct Fantasma fant = {tipo, velocidad, x, y};
+            struct Fantasma fant = {tipo, velocidad, x, y,0};
             tablero[x][y] = fant.tipo;
+            if(fant.tipo == 5){
+                fantBlinky = fant;
+            }
+            if(fant.tipo == 5){
+
+            }
+            if(fant.tipo == 5){
+
+            }
+            if(fant.tipo == 5){
+
+            }
             printf("Fantasma Creada\n");
         }
         else{
@@ -183,6 +220,7 @@ void moverPacman(char move) {
             jugador.puntaje += frutaEnMapa.puntaje;
             frutaEnMapa.puntaje = 0;
             frutaEnMapa.tipo = 0;
+            //enviar a java la matriz
         }
         tablero[ii][ji] = 0;
         tablero[ubicacion.i][ubicacion.j] = 2;
@@ -253,7 +291,7 @@ void agregarFrutaFantasma(){
     }
     if(f == '2') {
         printf("Creado fantasma\n");
-        printf("Ingrese el tipo (5 = Blinky, 6 = Pinky, 7 = ink, 8 = Clynde)");
+        printf("Ingrese el tipo (5 = Blinky, 6 = Pinky, 7 = inky, 8 = Clynde)");
         int tipo;
         scanf("%d", &tipo);
         printf("\n Ingrese velocidad ");
@@ -298,4 +336,27 @@ int contarPuntos(){
         }
     }
     return cant;
+}
+void movimientoBlinky(){
+    int move = rand() % 4;
+    struct Pos ubicacionB = buscarEntidad(5);
+    int ix = 0;
+    int jx = 0;
+    int ii = ubicacionB.i;
+    int ji = ubicacionB.j;
+    if (move == 0) ix = -1;
+    if (move == 1) ix = 1;
+    if (move == 2) jx = -1;
+    if (move == 3) jx = 1;
+    ubicacionB.i += ix;
+    ubicacionB.j += jx;
+    while (tablero[ubicacionB.i][ubicacionB.j] != 1) {
+        tablero[ii][ji] = fantBlinky.sobreEl;
+        fantBlinky.sobreEl = tablero[ubicacionB.i][ubicacionB.j];
+        tablero[ubicacionB.i][ubicacionB.j] = 5;
+        ii = ubicacionB.i;
+        ji = ubicacionB.j;
+        ubicacionB.i += ix;
+        ubicacionB.j += jx;
+    }
 }

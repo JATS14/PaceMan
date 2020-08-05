@@ -5,6 +5,12 @@
 
 #include <stdbool.h>
 
+2(10,5),5(8,9),10(9,25),1000,2,1
+0
+2(10,5),5(8,9),10(9,25),1000,2,1
+2
+2(10,5),5(8,9),10(9,25),1000,2,1
+
 
 int listaFantasmas[4];
 bool modoPastilla;
@@ -40,6 +46,9 @@ void copiarTableros();
 void resetearTablero();
 bool pasaDeNivel();
 int contarPuntos();
+
+void movimientoBlinky();
+
 
 
 #endif //PACMAN_JUEGO_H
