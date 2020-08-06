@@ -4,12 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/ChSocket/Socket.c.o"
-  "/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Cliente.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/ChSocket/Socket_Cliente.c.o"
-  "/home/adrian/CLionProjects/PaceMan/PACman/ChSocket/Socket_Servidor.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/ChSocket/Socket_Servidor.c.o"
-  "/home/adrian/CLionProjects/PaceMan/PACman/ClienteSocket.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/ClienteSocket.c.o"
   "/home/adrian/CLionProjects/PaceMan/PACman/Juego.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/Juego.c.o"
-  "/home/adrian/CLionProjects/PaceMan/PACman/ServidorSocket.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/ServidorSocket.c.o"
+  "/home/adrian/CLionProjects/PaceMan/PACman/ServidorSockets.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/ServidorSockets.c.o"
   "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/extras.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/extras.c.o"
   "/home/adrian/CLionProjects/PaceMan/PACman/main.c" "/home/adrian/CLionProjects/PaceMan/PACman/cmake-build-debug/CMakeFiles/PACman.dir/main.c.o"
   )
