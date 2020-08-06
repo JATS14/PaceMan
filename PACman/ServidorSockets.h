@@ -5,5 +5,5 @@
 #ifndef PACMAN_SERVIDORSOCKETS_H
 #define PACMAN_SERVIDORSOCKETS_H
 void server();
-void agregarFrutaFantasma();
+void agregarAJugeo();
 #endif //PACMAN_SERVIDORSOCKETS_H

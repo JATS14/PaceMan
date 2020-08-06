@@ -6,17 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/adrian/CLionProjects/PaceMan/PACman/Juego.h
+/home/adrian/CLionProjects/PaceMan/PACman/ServidorSockets.c
+ServidorSockets.h
+/home/adrian/CLionProjects/PaceMan/PACman/ServidorSockets.h
+unistd.h
+-
+stdio.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+string.h
+-
 stdbool.h
 -
 
-/home/adrian/CLionProjects/PaceMan/PACman/ServidorSockets.h
-
-/home/adrian/CLionProjects/PaceMan/PACman/main.c
-stdio.h
--
-Juego.h
-/home/adrian/CLionProjects/PaceMan/PACman/Juego.h
-ServidorSockets.h
 /home/adrian/CLionProjects/PaceMan/PACman/ServidorSockets.h
 

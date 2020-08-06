@@ -271,7 +271,7 @@ void pacmanMuere(int i, int j){
 }
 void agregarFrutaFantasma(){
     printf("------------------------------------------------------\n");
-    printf("Menu para agregar Fruta / fantasma \n");
+    printf("Menu para agregar Fruta / Fantasma / Pastillas \n");
     printf("Ingrese 1 para agregar Fruta o 2 para agregar Fantasma \n");
     char f = getchar();
     f = getchar();
