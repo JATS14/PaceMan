@@ -20,7 +20,7 @@ void server(){
     char buffer[100];
 
 
-    while (coneccion) {
+
         puerto = 25558;
         conexion_servidor = socket(AF_INET, SOCK_STREAM, 0);
         bzero((char *)&servidor, sizeof(servidor));
@@ -33,17 +33,21 @@ void server(){
             close(conexion_servidor);
             return;
         }
+        while (coneccion) {
+            sprintf(mensaje, "");
+           listen(conexion_servidor, 3);
+            printf("A la escucha en el puerto %d\n", ntohs(servidor.sin_port));
+            longc = sizeof(cliente); //Asignamos el tamaño de la estructura a esta variable
 
-        listen(conexion_servidor, 3);
-        printf("A la escucha en el puerto %d\n", ntohs(servidor.sin_port));
-        longc = sizeof(cliente); //Asignamos el tamaño de la estructura a esta variable
-        conexion_cliente = accept(conexion_servidor, (struct sockaddr *) &cliente, &longc);
-        if (conexion_cliente < 0) {
-            printf("Error al aceptar trafico\n");
-            close(conexion_servidor);
-            return;
+            conexion_cliente = accept(conexion_servidor, (struct sockaddr *) &cliente, &longc);
+            if (conexion_cliente < 0) {
+            while (conexion_cliente < 0) {
+                conexion_cliente = accept(conexion_servidor, (struct sockaddr *) &cliente, &longc);
+            }
         }
         printf("Conectando con el cliente\n");
+
+
         if (recv(conexion_cliente, buffer, 100, 0) < 0) {
             //Si recv() recibe 0 el cliente ha cerrado la conexion. Si es menor que 0 ha habido algún error.
             printf("Error al recibir los datos\n");
@@ -56,9 +60,9 @@ void server(){
             send(conexion_cliente, mensaje, 1024, 0);
 
         }
-        close(conexion_servidor);
-        sleep(1);
+        close(conexion_cliente);
     }
+    close(conexion_servidor);
     return;
 
 }
