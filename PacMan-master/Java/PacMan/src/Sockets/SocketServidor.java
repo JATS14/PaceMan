@@ -14,12 +14,16 @@ public class SocketServidor {
     protected ServerSocket ss; 
     protected Socket cs; 
     static String mensaje;
+    static Boolean conecion = false;
 
     
     public static String getMensaje() {
    	 return mensaje;
     }
     
+    public static Boolean probarConeccion() {
+    	return conecion;
+    }
     
     
     @SuppressWarnings("deprecation")
@@ -36,6 +40,7 @@ public class SocketServidor {
     	System.out.println("Esperando a C");
     	cs = ss.accept(); 
         System.out.println("C en línea");
+        conecion = true;
         
     	DataOutputStream bufferSalida =
     	            new DataOutputStream (cs.getOutputStream());

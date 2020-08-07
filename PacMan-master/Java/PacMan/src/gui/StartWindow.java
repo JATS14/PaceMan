@@ -17,7 +17,9 @@ import javax.swing.border.EmptyBorder;
 import Sockets.SocketServidor;
 
 public class StartWindow extends JFrame {
-
+	
+	Boolean coneccion = false;
+	
 	public static void main(String[] args) {
 		//crear thread aqui
 		Thread thread1 = new Thread() {
@@ -72,8 +74,11 @@ public class StartWindow extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				coneccion = SocketServidor.probarConeccion();
+				if(coneccion) {
 				windowJFrame frame = new windowJFrame();
 				 StartWindow.this.dispose();
+				}
 			}
 		});
 
@@ -86,7 +91,6 @@ public class StartWindow extends JFrame {
 		try {
 			new SocketServidor();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
