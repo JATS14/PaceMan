@@ -6,4 +6,6 @@
 #define PACMAN_SERVIDORSOCKETS_H
 void server();
 void agregarAJugeo();
+void cliente();\
+void iniciarCliente();
 #endif //PACMAN_SERVIDORSOCKETS_H

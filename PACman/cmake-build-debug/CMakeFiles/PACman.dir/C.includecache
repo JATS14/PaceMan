@@ -21,6 +21,8 @@ string.h
 -
 stdbool.h
 -
+arpa/inet.h
+-
 
 /home/adrian/CLionProjects/PaceMan/PACman/ServidorSockets.h
 
